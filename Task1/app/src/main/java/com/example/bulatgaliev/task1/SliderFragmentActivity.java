@@ -35,12 +35,15 @@ public class SliderFragmentActivity extends FragmentActivity {
         } catch (JSONException e) {
             Log.e("Exception", "SliderFragmentActivity: " + e.toString());
         }
+        int currentItemNumber = getIntent().getIntExtra("CURRENT_ITEM", 0);
+
         itemCount = jsonObject.length();
         setContentView(R.layout.view_pager);
 
         mPager = (ViewPager) findViewById(R.id.pager);
         mPagerAdapter = new SliderFragmentStatePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
+        mPager.setCurrentItem(currentItemNumber);
     }
 
     @Override
