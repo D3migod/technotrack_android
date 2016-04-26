@@ -33,7 +33,7 @@ public class SliderFragmentActivity extends FragmentActivity {
         try {
             jsonObject = new JSONObject(getIntent().getStringExtra("JSON_OBJECT"));
         } catch (JSONException e) {
-            Log.e("Exception", "SecondActivity: " + e.toString());
+            Log.e("Exception", "SliderFragmentActivity: " + e.toString());
         }
         itemCount = jsonObject.length();
         setContentView(R.layout.view_pager);
@@ -65,7 +65,7 @@ public class SliderFragmentActivity extends FragmentActivity {
                 String fragmentInfo = jsonObjectElement.getString("info");
                 return PageFragment.init(fragmentImageUrl, fragmentTitle, fragmentInfo);
             } catch (JSONException e) {
-                Log.e("Exception", "RecyclerViewAdapter: " + e.toString());
+                Log.e("Exception", "SliderFragmentActivity: " + e.toString());
             }
             return null;
         }

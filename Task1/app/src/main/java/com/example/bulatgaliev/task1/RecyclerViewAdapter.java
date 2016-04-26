@@ -102,7 +102,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         try {
             JSONObject jsonObjectElement = jsonObject.getJSONObject(jsonObject.names().getString(position));
-            new ImageLoadingTask(viewHolder.rowImage).execute(IMAGE_URL_BEGIN + jsonObjectElement.getString("picture"));
+            new ImageLoadingTask(viewHolder.rowImage, callingActivity).execute(IMAGE_URL_BEGIN + jsonObjectElement.getString("picture"));
             viewHolder.rowText.setText(jsonObjectElement.getString("title"));
         } catch (JSONException e) {
             Log.e("Exception", "RecyclerViewAdapter: " + e.toString());

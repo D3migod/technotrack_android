@@ -46,7 +46,7 @@ public class PageFragment extends Fragment {
         TextView fragmentInfo = (TextView) rootView.findViewById(R.id.fragmentInfo);
         fragmentTitle.setText(title);
         fragmentInfo.setText(info);
-        new ImageLoadingTask(fragmentImage).execute(RecyclerViewAdapter.IMAGE_URL_BEGIN + image);
+        new ImageLoadingTask(fragmentImage, getActivity()).execute(RecyclerViewAdapter.IMAGE_URL_BEGIN + image);
         return rootView;
     }
 }
