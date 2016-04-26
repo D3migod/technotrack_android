@@ -41,7 +41,7 @@ public class LoaderModel {
             try {
                 InputStream in = new BufferedInputStream(urlConnection.getInputStream());
                 return readStream(in);
-            } catch (IOException| JSONException e) {
+            } catch (IOException | JSONException e) {
                 Log.e("Exception", "LoaderModel: " + e.toString());
                 return json;
             }

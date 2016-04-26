@@ -1,6 +1,5 @@
 package com.example.bulatgaliev.task1;
 
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -9,12 +8,9 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
-import android.widget.ImageView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.ByteArrayOutputStream;
 
 /**
  * Created by BulatGaliev on 24.04.16.
@@ -54,6 +50,7 @@ public class SliderFragmentActivity extends FragmentActivity {
             mPager.setCurrentItem(mPager.getCurrentItem() - 1);
         }
     }
+
     private class SliderFragmentStatePagerAdapter extends FragmentStatePagerAdapter {
         public SliderFragmentStatePagerAdapter(FragmentManager fm) {
             super(fm);

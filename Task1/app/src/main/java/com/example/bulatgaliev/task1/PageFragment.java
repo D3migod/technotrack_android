@@ -18,6 +18,7 @@ public class PageFragment extends Fragment {
     private String image;
     private String title;
     private String info;
+
     static PageFragment init(String fragmentImageUrl, String fragmentTitle, String fragmentInfo) {
         PageFragment pageFragment = new PageFragment();
         Bundle args = new Bundle();
