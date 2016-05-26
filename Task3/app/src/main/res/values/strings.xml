@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Task3</string>
+    <string name="json_action">action</string>
+    <string name="json_data">data</string>
+    <string name="json_login">login</string>
+    <string name="json_pass">pass</string>
+    <string name="json_nick">nick</string>
+    <string name="json_cid">cid</string>
+    <string name="json_sid">sid</string>
+    <string name="json_name">name</string>
+    <string name="json_about">descr</string>
+    <string name="json_status">status</string>
+    <string name="json_user_id">user_id</string>
+    <string name="action_auth">auth</string>
+    <string name="action_register">register</string>
+    <string name="action_chat_list">channellist</string>
+    <string name="action_create_channel">createchannel</string>
+    <string name="action_set_user_info">setuserinfo</string>
+    <string name="action_user_info">userinfo</string>
+    <string name="menu_action_settings">settings</string>
+    <string name="menu_action_plus">plus</string>
+    <string name="menu_action_about_me">about me</string>
+</resources>
